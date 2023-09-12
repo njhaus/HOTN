@@ -46,6 +46,10 @@ button {
     color: black;
 }
 
+p, h1, h2, h3, button {
+    white-space: normal;
+}
+
 /* Body and Main */
 
 body {
