@@ -282,12 +282,12 @@ events.forEach(event => findSpellsBtn.addEventListener(event, (e) => {
     e.preventDefault();
     console.log('clicked the find spells button');
     scroll(spellsSection);
-    console.log(windowWidth);
     canCastTitle.classList.remove('hidden');
     oneMoreTitle.classList.add('hidden');
     canCastBtn.classList.add('hidden');
     oneMoreBtn.classList.remove('hidden');
     findSpells('can cast');
+    scroll(spellsSection);
 }));
 events.forEach(event => oneMoreBtn.addEventListener(event, (e) => {
     e.preventDefault();
