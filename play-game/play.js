@@ -30,7 +30,7 @@ const urlParams = new URLSearchParams(queryString);
 // On doc load, check if search params are correct
 window.addEventListener('DOMContentLoaded', () => {
     if (!urlParams.has('game') || !urlParams.has('character') || !urlParams.has('familiar')) {
-        window.location.replace('https://njhaus.github.io/HOTN');
+        window.location.replace('http://127.0.0.1:5500/HOTN/index.html');
     }
 })
 
@@ -270,7 +270,9 @@ function castSpell(spell) {
 // ANIMATIONS, SCROLL, and DEVICE ROTATE/RESIZE WINDOW
 
 function scroll(section) {
+    console.log(section);
     section.scrollIntoView({ behavior: 'smooth' });
+    section.scrollIntoView();
     section.scroll({ left: 0 });
 }
 
@@ -280,6 +282,7 @@ events.forEach(event => findSpellsBtn.addEventListener(event, (e) => {
     e.preventDefault();
     console.log('clicked the find spells button');
     scroll(spellsSection);
+    console.log(windowWidth);
     canCastTitle.classList.remove('hidden');
     oneMoreTitle.classList.add('hidden');
     canCastBtn.classList.add('hidden');
