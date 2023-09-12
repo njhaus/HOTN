@@ -196,7 +196,7 @@ form input[type=radio] {
 .game-type-label:first-of-type:hover {
     background-image: url(./img/cauldron-green-inner.png);
 }
-
+/* 
 .game-type-label:first-of-type .select-game-effect {
     position: absolute;
     width: 100%;
@@ -205,15 +205,15 @@ form input[type=radio] {
     background-size: 100%;
     background-position: left top;
     background-repeat: no-repeat;
-        /* -webkit-animation: select-game 0.3s linear 0s 1 forwards paused;
-    animation: select-game 0.3s linear 0s 1 forwards paused; */
+        -webkit-animation: select-game 0.3s linear 0s 1 forwards paused;
+    animation: select-game 0.3s linear 0s 1 forwards paused;
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     display: none;
     pointer-events: none;
-}
+} */
 
 .game-type-label:last-of-type {
     background-image: url(./img/cauldron-red-outline.png);
@@ -224,7 +224,7 @@ form input[type=radio] {
     background-image: url(./img/cauldron-red-inner.png);
 }
 
-.game-type-label:last-of-type .select-game-effect {
+/* .game-type-label:last-of-type .select-game-effect {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -232,15 +232,15 @@ form input[type=radio] {
     background-size: 100%;
     background-position: left top;
     background-repeat: no-repeat;
-        /* -webkit-animation: select-game 0.35s linear 0s 1 forwards paused;
-    animation: select-game 0.35s linear 0s 1 forwards paused; */
+        -webkit-animation: select-game 0.35s linear 0s 1 forwards paused;
+    animation: select-game 0.35s linear 0s 1 forwards paused;
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     display: none;
     pointer-events: none;
-}
+} */
 
 .game-radio:checked+.select-game-effect {
     display: block;
@@ -675,6 +675,90 @@ footer a:hover {
     .familiar-label {
         width: 5rem;
         height: 5rem;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .game-type-label:first-of-type .select-game-effect {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(./img/cauldron-green-outline.png);
+        background-size: 100%;
+        background-position: left top;
+        background-repeat: no-repeat;
+            -webkit-animation: select-game 0.3s linear 0s 1 forwards paused;
+        animation: select-game 0.3s linear 0s 1 forwards paused;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        display: none;
+        pointer-events: none;
+    }
+
+        .game-type-label:last-of-type {
+            background-image: url(./img/cauldron-red-outline.png);
+            margin-top: 1.5rem;
+        }
+
+        .game-type-label:last-of-type:hover {
+            background-image: url(./img/cauldron-red-inner.png);
+        }
+
+        .game-type-label:last-of-type .select-game-effect {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(./img/cauldron-red-outline.png);
+        background-size: 100%;
+        background-position: left top;
+        background-repeat: no-repeat;
+            -webkit-animation: select-game 0.35s linear 0s 1 forwards paused;
+        animation: select-game 0.35s linear 0s 1 forwards paused;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        display: none;
+        pointer-events: none;
+    }
+
+        .game-radio:checked+.select-game-effect {
+            display: block;
+            -webkit-animation: select-game 0.35s linear 0s 1 forwards;
+            animation: select-game 0.35s linear 0s 1 forwards;
+        }
+
+            
+    @-webkit-keyframes select-game {
+        from {
+                -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        to {
+                -webkit-transform: scale(5);
+            transform: scale(5);
+            opacity: 0;
+        }
+    }
+
+
+    @keyframes select-game {
+        from {
+                -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        to {
+                -webkit-transform: scale(5);
+            transform: scale(5);
+            opacity: 0;
+        }
     }
 }
 
