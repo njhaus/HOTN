@@ -272,22 +272,21 @@ function castSpell(spell) {
 function scroll(section) {
     console.log(section);
     section.scrollIntoView({ behavior: 'smooth' });
-    section.scrollIntoView();
-    section.scroll({ left: 0 });
+    if (window.innerWidth < 900) {
+        section.scrollIntoView();   
+    }
 }
 
 // Find spells buttons event listeners
 
 events.forEach(event => findSpellsBtn.addEventListener(event, (e) => {
     e.preventDefault();
-    console.log('clicked the find spells button');
     scroll(spellsSection);
     canCastTitle.classList.remove('hidden');
     oneMoreTitle.classList.add('hidden');
     canCastBtn.classList.add('hidden');
     oneMoreBtn.classList.remove('hidden');
     findSpells('can cast');
-    scroll(spellsSection);
 }));
 events.forEach(event => oneMoreBtn.addEventListener(event, (e) => {
     e.preventDefault();
