@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosts of the Night</title>
+    <!-- Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,700;1,200;1,400;1,700&family=Spinnaker&display=swap"
+        rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!-- FontAwesome Icons: -->
+    <script src="https://kit.fontawesome.com/9f9e3cfccf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="title-section">
+            <h1>Hosts of the Night</h1>
+        </section>
+        <section class="form-section">
+            <form action="./play-game/play.html" method="get" id="form-main">
+                <div class="form-wrap">
+                    <div class="form-area button-area">
+                        <h2 id="game-heading" class="form-heading">Choose a game</h2>
+                        <div class="button-wrapper">
+                            <label for="game-standard" class="game-type-label">
+                                Standard
+                                <input type="radio" name="game" class="game-radio" value="standard" id="game-standard">
+                                <div class="select-game-effect"></div>
+                            </label>
+                            <label for="game-coven" class="game-type-label">
+                                Coven
+                                <input type="radio" name="game" class="game-radio" value="coven" id="game-coven">
+                                <div class="select-game-effect"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-area">
+                        <h2 id="character-heading" class="form-heading">Choose a witch</h2>
+                        <div class="character-area">
+                            <label for="character-earth-mother" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-earth-mother" value="earthMother">
+                                <div class="character-select"></div>
+                            </label>
+                            <label for="character-folk-healer" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-folk-healer"
+                                    value="folkHealer">
+                                <div class="character-select"></div>
+                                </label>
+                            <label for="character-old-world-shaman" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-old-world-shaman"
+                                    value="oldWorldShaman">
+                                <div class="character-select"></div>
+                                </label>
+                            <label for="character-wandering-mystic" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-wandering-mystic"
+                                    value="wanderingMystic">
+                                <div class="character-select"></div>
+                                </label>
+                            <label for="character-voodoo-queen" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-voodoo-queen"
+                                    value="voodooQueen">
+                                <div class="character-select"></div>
+                                </label>
+                            <label for="character-night-demoness" class="character-label">
+                                <input type="radio" name="character" class="character-radio" id="character-night-demoness"
+                                    value="nightDemoness">
+                                <div class="character-select"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-area">
+                        <h2 id="familiar-heading" class="form-heading">Choose a familiar</h2>
+                        <div class="familiar-area">
+                            <label for="familiar-bat" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-bat" value="bat">
+                                <div class="familiar-select"></div>
+                            </label>
+                            <label for="familiar-cat" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-cat" value="cat">
+                                <div class="familiar-select"></div>
+                            </label>
+                            <label for="familiar-goat" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-goat" value="goat">
+                                <div class="familiar-select"></div>
+                            </label>
+                            <label for="familiar-owl" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-owl" value="owl">
+                                <div class="familiar-select"></div>
+                            </label>
+                            <label for="familiar-snake" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-snake" value="snake">
+                                <div class="familiar-select"></div>
+                            </label>
+                            <label for="familiar-wolf" class="familiar-label">
+                                <input type="radio" name="familiar" class="familiar-radio" id="familiar-wolf" value="wolf">
+                                <div class="familiar-select"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <div class="form-area">
+                            <button id="submit-button" type="submit" class="submit-button">Play!</button>
+                    </div>
+                </div>
+            </form>
+            <button id="back-button" class="back-button hidden">Back</button>
+        </section>
+        <footer>
+            <div class="attribution-links">
+                <a
+                    href="https://www.freepik.com/free-photo/3d-render-halloween-landscape-with-spooky-foggy-forest_9812700.htm#query=dark%20forest&position=2&from_view=search&track=ais">Background Image
+                    by kjpargeter <i class="fa-solid fa-link"></i></a>
+                <a
+                    href="https://www.freepik.com/free-vector/watercolor-halloween-background_9467820.htm#page=2&query=dark%20trees%20border&position=9&from_view=search&track=country_rows_v1">Overlay
+                    by pikisuperstar <i class="fa-solid fa-link"></i></a>
+            </div>
+            <div class="attribution-links hidden">
+                <p>Icons by Freepik:</p>
+                <a href="https://www.freepik.com/icon/wolf_1016486#position=16&page=8&term=wolf&fromView=search">Wolf <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.freepik.com/icon/owl_394875#position=82&page=9&term=owl&fromView=search">Owl <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.freepik.com/icon/bat_310572#position=44&page=4&term=bat+outline&fromView=search">Bat <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.freepik.com/icon/halloween-cat-face-outline_59636#position=5&page=6&term=cat+outline&fromView=search">Cat <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.freepik.com/icon/snake_5620681#fromView=search&term=snake+outline&page=2&position=92">Snake <i class="fa-solid fa-link"></i></a>
+                <a href="https://www.freepik.com/icon/capricorn_5737019#fromView=search&term=goat+outline&page=1&position=44">Goat <i class="fa-solid fa-link"></i></a>
+            </div>
+            <button class="how-to-play">How to Play</button>
+        </footer>
+    </main>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

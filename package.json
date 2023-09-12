@@ -1,0 +1,11 @@
+{
+  "name": "hotn",
+  "version": "1.0.0",
+  "description": "Hosts of the Night Companion WebApp",
+  "main": "main/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nickhaus",
+  "license": "MIT"
+}

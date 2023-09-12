@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosts of the Night: Spellbook</title>
+    <!-- Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,700;1,200;1,400;1,700&family=Spinnaker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="play.css">
+    <!-- FontAwesome Icons: -->
+    <script src="https://kit.fontawesome.com/9f9e3cfccf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h2 id="main-title">Hosts of the Night</h2>
+        <h1>Spellbook</h1>
+        <img src="../img/spellbook-divider.png">
+    </header>
+    <!-- Main -->
+    <main>
+        <img class="bkg" src="../img/cauldron-outline-white.png">
+        <img class="bkg" src="../img/cauldron-black.png">
+        <div class="scroll-wrap">
+            <section id="ingredients-section" class="ingredients-section">
+                <div class="scroll-area">
+                    <div class="ingredients-container">
+                        <div class="ingredient-wrapper">
+                            <h4>Flora</h4>
+                            <div class="icon" id="flora-icon"></div>
+                            <p class="ingredient-count" id="flora">0</p>
+                            <div>
+                                <button id="flora-up" class="up">+</button>
+                                <button id="flora-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Fauna</h4>
+                            <div class="icon" id="fauna-icon"></div>
+                            <p class="ingredient-count" id="fauna">0</p>
+                            <div>
+                                <button id="fauna-up" class="up">+</button>
+                                <button id="fauna-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Mineral</h4>
+                            <div class="icon" id="mineral-icon"></div>
+                            <p class="ingredient-count" id="mineral">0</p>
+                            <div>
+                                <button id="mineral-up" class="up">+</button>
+                                <button id="mineral-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Rite</h4>
+                            <div class="icon" id="rite-icon"></div>
+                            <p class="ingredient-count" id="rite">0</p>
+                            <div>
+                                <button id="rite-up" class="up">+</button>
+                                <button id="rite-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Divination</h4>
+                            <div class="icon" id="divination-icon"></div>
+                            <p class="ingredient-count" id="divination">0</p>
+                            <div>
+                                <button id="divination-up" class="up">+</button>
+                                <button id="divination-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Symbol</h4>
+                            <div class="icon" id="symbol-icon"></div>
+                            <p class="ingredient-count" id="symbol">0</p>
+                            <div>
+                                <button id="symbol-up" class="up">+</button>
+                                <button id="symbol-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Trance</h4>
+                            <div class="icon" id="trance-icon"></div>
+                            <p class="ingredient-count" id="trance">0</p>
+                            <div>
+                                <button id="trance-up" class="up">+</button>
+                                <button id="trance-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Demon</h4>
+                            <div class="icon" id="demon-icon"></div>
+                            <p class="ingredient-count" id="demon">0</p>
+                            <div>
+                                <button id="demon-up" class="up">+</button>
+                                <button id="demon-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Deity</h4>
+                            <div class="icon" id="deity-icon"></div>
+                            <p class="ingredient-count" id="deity">0</p>
+                            <div>
+                                <button id="deity-up" class="up">+</button>
+                                <button id="deity-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper">
+                            <h4>Numen</h4>
+                            <div class="icon" id="numen-icon"></div>
+                            <p class="ingredient-count" id="numen">0</p>
+                            <div>
+                                <button id="numen-up" class="up">+</button>
+                                <button id="numen-down" class="down">-</button>
+                            </div>
+                        </div>
+                        <div class="ingredient-wrapper familiar-wrapper">
+                            <h4>Familiar</h4>
+                            <p>Click to activate</p>
+                            <input class="familiar" id="familiar-chk" type="checkbox">
+                            <label for="familiar-chk" class="icon familiar-icon" id="familiar-icon"></label>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button id="find-spells-btn">Find Spells</button>
+                    </div>
+                </div>
+            </section>
+            <section id="spells-section" class="spells-section">
+                <div class="scroll-area spells-scroll">
+                    <div id="can-cast" class="can-cast spells">
+                        <h3 id="can-cast-title" class="">You can cast these spells!</h3>
+                        <h3 id="one-more-title" class="hidden">You need one more ingredient to cast these spells.</h3>
+                        <div id="spells-wrap-can-cast" class="spells-container">
+              
+                        </div>
+                    </div>
+                    <div class="spells-buttons-wrap">
+                        <button id="back-btn" class="spells-button">Back</button>
+                        <button id="can-cast-btn" class="spells-button">Spells you can cast now</button>
+                        <button id="one-more-btn" class="spells-button">Spells needing one more ingredient</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a
+                href="https://www.freepik.com/free-photo/vintage-grunge-paper-background_5405364.htm#page=3&query=old%20book%20open&position=5&from_view=search&track=ais">Background
+                Image
+                by kjpargeter<i class="fa-solid fa-link"></i></a>
+            <a
+                href="https://www.freepik.com/free-vector/collection-hand-drawn-decorative-text-divider_1242119.htm#query=fancy%20divider&position=4&from_view=search&track=country_rows_v2">Divider
+                by Freepik<i class="fa-solid fa-link"></i></a>
+            <a href="https://www.freepik.com/icon/cosmos_96680#fromView=search&term=spiral&page=1&position=6">Energy by Freepik<i class="fa-solid fa-link"></i></a>
+        </div>
+        <button id="how-to-play">How to Play</button>
+    </footer>
+    <script type="module" src="play.js"></script>
+</body>
+</html>
