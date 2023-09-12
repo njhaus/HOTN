@@ -270,7 +270,8 @@ function castSpell(spell) {
 // ANIMATIONS, SCROLL, and DEVICE ROTATE/RESIZE WINDOW
 
 function scroll(section) {
-    section.scrollIntoView({ behavior: 'smooth'});
+    section.scrollIntoView({ behavior: 'smooth' });
+    section.scroll({ left: 0 });
 }
 
 // Find spells buttons event listeners
@@ -309,4 +310,4 @@ events.forEach(event => backBtn.addEventListener(event, (e) => {
 
 // orient screen changes
 window.addEventListener('resize', () => scroll(ingredientsSection));
-screen.orientation.addEventListener('change', () => mainTitle.scroll({top: 0}));
+screen.orientation.addEventListener('change', () => mainTitle.scroll({top: 20}));

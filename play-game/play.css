@@ -361,6 +361,7 @@ footer button:active {
     color: black;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
+    white-space: normal;
 }
 
 .spells-buttons-wrap {
