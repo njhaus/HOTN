@@ -30,7 +30,7 @@ const urlParams = new URLSearchParams(queryString);
 // On doc load, check if search params are correct
 window.addEventListener('DOMContentLoaded', () => {
     if (!urlParams.has('game') || !urlParams.has('character') || !urlParams.has('familiar')) {
-        window.location.replace('http://127.0.0.1:5500/HOTN/index.html');
+        window.location.replace('https://njhaus.github.io/HOTN');
     }
 })
 
